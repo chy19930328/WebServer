@@ -17,7 +17,7 @@ class Channel {
   typedef std::function<void()> CallBack;
   EventLoop *loop_;
   int fd_;
-  __uint32_t events_;
+  __uint32_t events_;#关心的io事件
   __uint32_t revents_;
   __uint32_t lastEvents_;
 
